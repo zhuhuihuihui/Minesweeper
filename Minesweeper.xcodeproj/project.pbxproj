@@ -15,6 +15,8 @@
 		D2C895811BABE1910069C671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C8957F1BABE1910069C671 /* LaunchScreen.storyboard */; };
 		D2C8958C1BABE1910069C671 /* MinesweeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8958B1BABE1910069C671 /* MinesweeperTests.m */; };
 		D2C895971BABE1910069C671 /* MinesweeperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C895961BABE1910069C671 /* MinesweeperUITests.m */; };
+		D2C895A61BB226C20069C671 /* MinesweeperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C895A51BB226C20069C671 /* MinesweeperViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D2C895AB1BB2295F0069C671 /* Minesweeper.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C895AA1BB2295F0069C671 /* Minesweeper.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		D2C895921BABE1910069C671 /* MinesweeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinesweeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C895961BABE1910069C671 /* MinesweeperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinesweeperUITests.m; sourceTree = "<group>"; };
 		D2C895981BABE1910069C671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C895A41BB226C20069C671 /* MinesweeperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinesweeperViewController.h; sourceTree = "<group>"; };
+		D2C895A51BB226C20069C671 /* MinesweeperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinesweeperViewController.m; sourceTree = "<group>"; };
+		D2C895A91BB2295F0069C671 /* Minesweeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Minesweeper.h; path = Views/Minesweeper.h; sourceTree = "<group>"; };
+		D2C895AA1BB2295F0069C671 /* Minesweeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Minesweeper.m; path = Views/Minesweeper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		D2C895701BABE1900069C671 /* Minesweeper */ = {
 			isa = PBXGroup;
 			children = (
+				D2C895A81BB229000069C671 /* Models */,
+				D2C895A71BB228F60069C671 /* Views */,
 				D2C895741BABE1910069C671 /* AppDelegate.h */,
 				D2C895751BABE1910069C671 /* AppDelegate.m */,
 				D2C895771BABE1910069C671 /* ViewController.h */,
@@ -110,6 +118,8 @@
 				D2C8957F1BABE1910069C671 /* LaunchScreen.storyboard */,
 				D2C895821BABE1910069C671 /* Info.plist */,
 				D2C895711BABE1900069C671 /* Supporting Files */,
+				D2C895A41BB226C20069C671 /* MinesweeperViewController.h */,
+				D2C895A51BB226C20069C671 /* MinesweeperViewController.m */,
 			);
 			path = Minesweeper;
 			sourceTree = "<group>";
@@ -138,6 +148,22 @@
 				D2C895981BABE1910069C671 /* Info.plist */,
 			);
 			path = MinesweeperUITests;
+			sourceTree = "<group>";
+		};
+		D2C895A71BB228F60069C671 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2C895A91BB2295F0069C671 /* Minesweeper.h */,
+				D2C895AA1BB2295F0069C671 /* Minesweeper.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D2C895A81BB229000069C671 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2C895791BABE1910069C671 /* ViewController.m in Sources */,
+				D2C895A61BB226C20069C671 /* MinesweeperViewController.m in Sources */,
+				D2C895AB1BB2295F0069C671 /* Minesweeper.m in Sources */,
 				D2C895761BABE1910069C671 /* AppDelegate.m in Sources */,
 				D2C895731BABE1910069C671 /* main.m in Sources */,
 			);
@@ -496,6 +524,7 @@
 				D2C8959D1BABE1910069C671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2C8959E1BABE1910069C671 /* Build configuration list for PBXNativeTarget "MinesweeperTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +533,7 @@
 				D2C895A01BABE1910069C671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2C895A11BABE1910069C671 /* Build configuration list for PBXNativeTarget "MinesweeperUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +542,7 @@
 				D2C895A31BABE1910069C671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
